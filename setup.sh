@@ -115,5 +115,6 @@ run_cmd ">> Setting up .hushlogin..."    "ln -s $PWD/.hushlogin $HOME/.hushlogin
 run_cmd ">> Setting up .screenrc..."     "ln -s $PWD/.screenrc $HOME/.screenrc"
 run_cmd ">> Setting up .tmux.conf..."    "ln -s $PWD/.tmux.conf $HOME/.tmux.conf"
 run_cmd ">> Setting up .vimrc..."        "ln -s $HOME/.config/nvim/init.vim $HOME/.vimrc"
+run_cmd ">> Setting up .vim/autoload..." "ln -s $HOME/.vim/autoload $HOME/.config/nvim/"
 run_cmd ">> Setting up .wrk-spaces..."   "cp $PWD/.wrk-spaces $HOME/.wrk-spaces"
 run_cmd ">> Setting up .fav-spaces..."   "cp $PWD/.fav-spaces $HOME/.fav-spaces"
