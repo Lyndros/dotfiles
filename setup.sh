@@ -100,7 +100,11 @@ run_cmd ">> Installing ddgr..."                 "brew install ddgr"
 run_cmd ">> Installing vim plug..."             "curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 run_cmd ">> Installing neovim-remote..."        "pip3 install --user --upgrade neovim-remote"
 
-header "STEP 7: Installing new dotfiles"
+header "STEP 7: Installing ansible"
+run_cmd ">> Installing ansible..."              "brew install ansible"
+run_cmd ">> Installing ansible-lint..."         "brew install ansible-lint"
+
+header "STEP 8: Installing new dotfiles"
 run_cmd ">> Setting up .zshrc..."        "ln -s $PWD/.zshrc $HOME/.zshrc"
 run_cmd ">> Setting up .zprofile..."     "ln -s $PWD/.zprofile $HOME/.zprofile"
 run_cmd ">> Setting up .bash_profile..." "ln -s $PWD/.bash_profile $HOME/.bash_profile"
