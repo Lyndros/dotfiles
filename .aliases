@@ -109,11 +109,18 @@ alias reload="exec ${SHELL} -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
+# Some interesting functions
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+sourcetree () { open -a SourceTree --args $* ;}
+weather() { curl "wttr.in/$1?format=v2"; }
 
 alias cht="$HOME/.scripts/cht.sh"
 alias duck="ddgr"
 
+alias sshuttle-manager=$HOME/devel/repos/private/custom_tools/sshuttle-manager/sshuttle-manager.sh
+alias vpn-edit="vim $HOME/devel/repos/private/custom_tools/sshuttle-manager/.vpn-list"
+
+shopt -s expand_aliasddes
 # VRA DEVELOPMENT
 # export MVN_PROFILE="QE"
 # alias mvnos="mvn clean package vrealize:push -DincludeDependencies=true -DskipTests -P$MVN_PROFILE -Dvro.packageImportConfigurationAttributeValues=false -pl vro"
