@@ -120,7 +120,6 @@ alias duck="ddgr"
 alias sshuttle-manager=$HOME/devel/repos/private/custom_tools/sshuttle-manager/sshuttle-manager.sh
 alias vpn-edit="vim $HOME/devel/repos/private/custom_tools/sshuttle-manager/.vpn-list"
 
-shopt -s expand_aliasddes
 # VRA DEVELOPMENT
 # export MVN_PROFILE="QE"
 # alias mvnos="mvn clean package vrealize:push -DincludeDependencies=true -DskipTests -P$MVN_PROFILE -Dvro.packageImportConfigurationAttributeValues=false -pl vro"
