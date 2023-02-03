@@ -117,16 +117,5 @@ weather() { curl "wttr.in/$1?format=v2"; }
 alias cht="$HOME/.scripts/cht.sh"
 alias duck="ddgr"
 
-alias vcloud-lease=$HOME/devel/repos/private/custom_tools/vcloud/vcloud-lease.sh
-alias sshuttle-manager=$HOME/devel/repos/private/custom_tools/sshuttle-manager/sshuttle-manager.sh
-alias vpn-edit="vim $HOME/devel/repos/private/custom_tools/sshuttle-manager/.vpn-list"
-
-# VRA DEVELOPMENT
-# export MVN_PROFILE="QE"
-# alias mvnos="mvn clean package vrealize:push -DincludeDependencies=true -DskipTests -P$MVN_PROFILE -Dvro.packageImportConfigurationAttributeValues=false -pl vro"
-# alias mvnog="mvn vra-ng:pull -PQE2 -pl vro"
-# alias mvnas="mvn clean package vrealize:push -DincludeDependencies=true -DskipTests -P$(echo $MVN_PROFILE) -Dvro.packageImportConfigurationAttributeValues=false -pl vra"
-# alias mvnag="mvn vra-ng:pull -PQE2 -pl vra"
-# alias vraRestart="node ~/dev/vraTools/vra-scripts/mainRestartLastDeployment.js"
-# alias vraDelete="node ~/dev/vraTools/vra-scripts/mainDeleteAllDeployments.js"
-# alias vra="node ~/dev/vraTools/vra-cli/cli.js i"
+#source $HOME/dotfiles/dotfiles-work/.aliases
+source $HOME/dotfiles/dotfiles-personal/.aliases
