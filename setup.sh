@@ -125,3 +125,5 @@ run_cmd ">> Setting up .vimrc..."        "ln -s $HOME/.config/nvim/init.vim $HOM
 run_cmd ">> Setting up .vim/autoload..." "ln -s $HOME/.vim/autoload $HOME/.config/nvim/"
 run_cmd ">> Setting up .wrk-spaces..."   "cp $PWD/.wrk-spaces $HOME/.wrk-spaces"
 run_cmd ">> Setting up .fav-spaces..."   "cp $PWD/.fav-spaces $HOME/.fav-spaces"
+run_cmd ">> Setting up .dotfiles-personal..."   "ln -s $PWD/devel/repos/dotfiles/dotfiles-personal $HOME/.dotfiles-personal"
+run_cmd ">> Setting up .dotfiles-work..."       "ln -s $PWD/devel/repos/dotfiles/dotfiles-work $HOME/.dotfiles-work"
