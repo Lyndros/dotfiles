@@ -85,9 +85,12 @@ run_cmd ">> Deleting folder .config..."  "rm -rf $HOME/.config"
 
 header "STEP 5: Installing new folders"
 PWD=`pwd`
-run_cmd ">> Setting cht folder..."       "cp -R $PWD/.scripts $HOME"
-run_cmd ">> Setting up vim folder..."    "cp -R $PWD/.vim $HOME"
-run_cmd ">> Setting up nvim folder..."   "cp -R $PWD/.config $HOME"
+run_cmd ">> Setting cht folder..."              "cp -R $PWD/.scripts $HOME"
+run_cmd ">> Setting up vim folder..."           "cp -R $PWD/.vim $HOME"
+run_cmd ">> Setting up nvim folder..."          "cp -R $PWD/.config $HOME"
+run_cmd ">> Setting up personal dotfiles..."    "cp -R $PWD/.dotfiles-personal $HOME"
+run_cmd ">> Setting up work dotfiles..."        "cp -R $PWD/.dotfiles-work $HOME"
+
 
 header "STEP 6: Installing iTerm, ZSH eyecandy and tools"
 run_cmd ">> Installing iTerm2..."               "brew install iterm2"

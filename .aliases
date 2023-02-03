@@ -117,5 +117,5 @@ weather() { curl "wttr.in/$1?format=v2"; }
 alias cht="$HOME/.scripts/cht.sh"
 alias duck="ddgr"
 
-#source $HOME/dotfiles/dotfiles-work/.aliases
-source $HOME/dotfiles/dotfiles-personal/.aliases
+#source $HOME/.dotfiles-work/.aliases
+source $HOME/.dotfiles-personal/.aliases
